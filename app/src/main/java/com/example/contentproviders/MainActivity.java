@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         CursorLoader cursorLoader = new CursorLoader(
                 this,
                 allTitles, null, null, null,
-                "title desc");
+                "title asc");
         c = cursorLoader.loadInBackground();
         if (c.moveToFirst()) {
             do{
